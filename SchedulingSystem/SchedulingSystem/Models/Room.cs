@@ -17,5 +17,6 @@ namespace SchedulingSystem.Pages.Models
         [StringLength(50)] public string RoomDescription { get; set; }
         [Display(Name = "Capacity")]
         public byte RoomCapacity { get; set; }
+      
     }
 }
