@@ -10,7 +10,6 @@ namespace SchedulingSystem.Models
         public int GroupID { get; set; }
         public string Name { get; set; }
 
-
         public ICollection<UserGroup> UserGroups { get; set; }
     }
 }
