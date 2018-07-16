@@ -1,6 +1,6 @@
 ﻿using System.Security.AccessControl;
 
-namespace SchedulingSystem.Pages.Models
+namespace SchedulingSystem.Models
 {
     public class RoomResource
     {
