@@ -7,5 +7,6 @@ namespace SchedulingSystem.Models
 {
     public class Test
     {
+        aaaaa
     }
 }
