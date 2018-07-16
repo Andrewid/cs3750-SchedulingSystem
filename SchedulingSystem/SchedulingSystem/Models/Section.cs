@@ -16,8 +16,9 @@ namespace SchedulingSystem.Models
         public int SemesterID { get; set; }
 
 
-       // public Room Room { get; set; }  // 
-       // public TimeBlockID TimeBlockID { get; set;}
+         public Room Room { get; set; }  
+         public TimeBlock TimeBlock { get; set;}
+        public DayBlock DayBlock  { get; set;}
        public Semester Semester { get; set; }
 
         public Course Course { get; set; }
