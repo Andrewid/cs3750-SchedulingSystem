@@ -9,6 +9,8 @@ namespace SchedulingSystem.Models
     public class Semester
     {
         public int SemesterID { get; set; }
+        public int SemesterYear { get; set; }
+
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime StartDate { get; set; }
@@ -18,7 +20,10 @@ namespace SchedulingSystem.Models
         public DateTime EndDate { get; set; }
 
         public int StatusID { get; set; }
+        public int SemesterNameID { get; set; }
+
         public ICollection<Section> Section { get; set; }
         public Status Status { get; set; }
+        public SemesterName SemesterName { get; set; }
     }
 }

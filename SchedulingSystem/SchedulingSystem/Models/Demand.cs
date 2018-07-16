@@ -14,5 +14,6 @@ namespace SchedulingSystem.Models
         public int DemandSourceID { get; set; }
 
         public ICollection<Course> Courses { get; set; }
+        public ICollection<DemandSource> DemandSources { get; set; }
     }
 }

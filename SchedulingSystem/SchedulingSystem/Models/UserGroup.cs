@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 
 namespace SchedulingSystem.Models
 {
-    public class InstructorPreferenceCourse
+    public class UserGroup
     {
-        public int InstructorPreferenceCourseID { get; set; }
+        public int UserGroupID { get; set; }
         public int EmployeeID { get; set; }
-        public int CourseID { get; set; }
+        public int GroupID { get; set; }
 
 
         public Employee Employee { get; set; }
-        public Course Course { get; set; }
+        public Group Group { get; set; }
     }
 }
