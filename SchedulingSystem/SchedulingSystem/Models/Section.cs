@@ -17,5 +17,6 @@ namespace SchedulingSystem.Models
         public int SemesterID { get; set; }
 
         public Course Course { get; set; }
+        public Status Status { get; set; }// add
     }
 }
