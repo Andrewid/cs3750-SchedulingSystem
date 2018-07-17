@@ -22,5 +22,8 @@ namespace SchedulingSystem.Models
         [Display(Name = "Zip code")]
         [DataType(DataType.PostalCode)]
         [StringLength(11)] public string LocationZipCode        { get; set; }
+
+        public ICollection<Room> Rooms { get; set; }
+        public InstructorPreference InstructorPreference { get; set; }
     }
 }

@@ -7,7 +7,7 @@ namespace SchedulingSystem.Models
 {
     public class InstructorPreference
     {
-        public int PreferenceID { get; set; }
+        public int InstructorPreferenceID { get; set; }
 
         public int LocationID { get; set; }
 
@@ -17,9 +17,7 @@ namespace SchedulingSystem.Models
 
         public int DayBlockID { get; set; }
 
-        public int MyProperty { get; set; }
-
-        public bool Available { get; set; }
+       public bool Available { get; set; }
 
 
 

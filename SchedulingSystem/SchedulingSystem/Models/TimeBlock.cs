@@ -17,5 +17,8 @@ namespace SchedulingSystem.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime End { get; set; }
+
+        public ICollection<InstructorPreference> InstructorPreferences { get; set; }
+        public ICollection<Section> Sections { get; set; }
     }
 }

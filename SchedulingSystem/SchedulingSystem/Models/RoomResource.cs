@@ -8,5 +8,7 @@ namespace SchedulingSystem.Models
         public int ResourceID { get; set; }
         public int RoomID { get; set; }
         public int Quantity { get; set; }
+
+        public Room Room { get; set; }
     }
 }

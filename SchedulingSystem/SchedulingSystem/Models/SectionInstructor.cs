@@ -13,7 +13,7 @@ namespace SchedulingSystem.Models
 
         public Section Section { get; set; }
         // Employee?
-        public Instructor Instructor { get; set; } // it is not yet added 
+        public Employee Employee { get; set; } // it is not yet added 
 
     }
 }
