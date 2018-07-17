@@ -18,7 +18,7 @@ namespace SchedulingSystem.Models
         [Display(Name = "Capacity")]
         public byte RoomCapacity { get; set; }
 
-        public ICollection<RoomResource> RoomResource { get; set; }
+        public ICollection<RoomResource> RoomResources { get; set; }
         public Location Location { get; set; }
     }
 }
