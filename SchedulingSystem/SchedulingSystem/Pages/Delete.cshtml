@@ -1,0 +1,58 @@
+﻿@page
+@model SchedulingSystem.Pages.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Section</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Section.Room)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Section.Room.RoomID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Section.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Section.Status.StatusID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Section.Course)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Section.Course.CourseID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Section.DayBlock)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Section.DayBlock.DayBlockID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Section.Semester)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Section.Semester.SemesterID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Section.TimeBlock)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Section.TimeBlock.TimeBlockID)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Section.SectionID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
