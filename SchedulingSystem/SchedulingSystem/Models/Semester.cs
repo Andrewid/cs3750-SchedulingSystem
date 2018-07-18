@@ -22,7 +22,8 @@ namespace SchedulingSystem.Models
         public int StatusID { get; set; }
         public int SemesterNameID { get; set; }
 
-        public ICollection<Section> Section { get; set; }
+        public ICollection<Section> Sections { get; set; }
+        public ICollection<Demand> Demands { get; set; }
         public Status Status { get; set; }
         public SemesterName SemesterName { get; set; }
     }

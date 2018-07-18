@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchedulingSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,11 +17,10 @@ namespace SchedulingSystem.Models
         public int SemesterID   { get; set; }
 
 
-        public Room Room            { get; set; }  
+        public Room  Room   { get; set; }  
         public TimeBlock TimeBlock  { get; set; }
         public DayBlock DayBlock    { get; set; }
         public Semester Semester    { get; set; }
-
         public Course Course { get; set; }
         public Status Status { get; set; }// add
 

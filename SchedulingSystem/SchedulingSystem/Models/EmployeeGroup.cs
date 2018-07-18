@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace SchedulingSystem.Models
 {
-    public class UserGroup
+    public class EmployeeGroup
     {
-        public int UserGroupID { get; set; }
+        public int EmployeeGroupID { get; set; }
         public int EmployeeID { get; set; }
         public int GroupID { get; set; }
 

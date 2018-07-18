@@ -10,5 +10,7 @@ namespace SchedulingSystem.Models
         public int ResourceID { get; set; }
         public string Description { get; set; }
         public string ResourceName { get; set; }
+
+        public ICollection<RoomResource> RoomResources { get; set; }
     }
 }

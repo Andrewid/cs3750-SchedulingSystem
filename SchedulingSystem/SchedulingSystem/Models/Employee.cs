@@ -26,9 +26,8 @@ namespace SchedulingSystem.Models
 
         
 
-        public ICollection<UserGroup> UserGroups { get; set; }
+        public ICollection<EmployeeGroup> EmployeeGroups { get; set; }
         public ICollection<InstructorPreference> InstructorPreferences { get; set; }
-        public ICollection<InstructorPreferenceCourse> InstructorPreferenceCourses { get; set; }
-        public Authentcation Authentcation { get; set; }
+        public ICollection<InstructorPreferenceCourse> InstructorPreferenceCourses { get; set; }      
     }
 }

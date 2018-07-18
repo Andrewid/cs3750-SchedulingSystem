@@ -20,5 +20,8 @@ namespace SchedulingSystem.Models
         /// This is an 8 bit int for Dewey's fancy bitwise functionality
         /// </summary>
         public byte DaysCode { get; set; }
+
+        public ICollection<InstructorPreference> InstructorPreferences { get; set; }
+        public ICollection<Section> Sections { get; set; }
     }
 }
