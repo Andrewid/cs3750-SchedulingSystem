@@ -1,10 +1,66 @@
 ﻿@page
-@model IndexModel
+@model SchedulingSystem.Pages.IndexModel
+
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Index";
 }
 
-<div>
-    <h1>Welcome to the Scheduling System</h1>
-    <p>Select an option from the Menu above</p>
-</div>
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Section[0].Room)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Section[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Section[0].Course)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Section[0].DayBlock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Section[0].Semester)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Section[0].TimeBlock)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Section) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Room.RoomID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status.StatusID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.CourseID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DayBlock.DayBlockID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Semester.SemesterID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeBlock.TimeBlockID)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.SectionID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.SectionID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.SectionID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

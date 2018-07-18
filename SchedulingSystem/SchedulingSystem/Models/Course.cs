@@ -14,7 +14,8 @@ namespace SchedulingSystem.Models
         public string CourseCode { get; set; }
         
         public ICollection<Section> Sections { get; set; }
-        public ICollection<InstructorPreferenceCourse> InstructorPreferenceCourses { get; set; }
+        public ICollection<InstructorPreferenceCourse> 
+            InstructorPreferenceCourses { get; set; }
         public Demand Demand { get; set; }
         public Department Department { get; set; }
     }

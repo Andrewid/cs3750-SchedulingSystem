@@ -13,6 +13,6 @@ namespace SchedulingSystem.Models
 
 
         public Employee Employee { get; set; }
-        public Course Course { get; set; }
+        public Course   Course { get; set; }
     }
 }
