@@ -18,10 +18,8 @@ namespace SchedulingSystem.Models
         public bool	Online  	{ get; set; }
         /// <summary>
         /// This is an 8 bit int for Dewey's fancy bitwise functionality
-        /// To be or not to be implemented
-        /// Should be null-able.
         /// </summary>
-        public byte? DaysCode   { get; set; } 
+        public byte DaysCode { get; set; }
 
         public ICollection<InstructorPreference> InstructorPreferences { get; set; }
         public ICollection<Section> Sections { get; set; }

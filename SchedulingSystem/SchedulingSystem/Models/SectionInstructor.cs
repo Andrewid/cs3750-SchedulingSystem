@@ -8,10 +8,12 @@ namespace SchedulingSystem.Models
     public class SectionInstructor
     {
         public int SectionInstructorID { get; set; }
-        public int SectionID    { get; set; }
-        public int InstructorID { get; set; }
+        public int SectionID { get; set; }
+        public int InstructorID { get; set; }//
 
-        public Section  Section  { get; set; }
-        public Employee Employee { get; set; } 
+        public Section Section { get; set; }
+        // Employee?
+        public Employee Employee { get; set; } // it is not yet added 
+
     }
 }

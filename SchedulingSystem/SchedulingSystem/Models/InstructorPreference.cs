@@ -21,10 +21,10 @@ namespace SchedulingSystem.Models
 
 
 
-        public Employee  Employee { get; set; }
+        public Employee Employee { get; set; }
         public TimeBlock TimeBlock { get; set; }
-        public DayBlock  DayBlock { get; set; }
-        public Location  Location { get; set; }
+        public DayBlock DayBlock { get; set; }
+        public Location Location { get; set; }
 
     }
 }

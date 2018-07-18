@@ -7,7 +7,7 @@ namespace SchedulingSystem.Models
 {
     public class Status
     {
-        public int    StatusID { get; set; }
+        public int StatusID { get; set; }
         public String StatusName { get; set; }
 
         public ICollection<Section> Section { get; set; }

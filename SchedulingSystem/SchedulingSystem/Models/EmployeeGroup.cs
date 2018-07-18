@@ -11,6 +11,7 @@ namespace SchedulingSystem.Models
         public int EmployeeID { get; set; }
         public int GroupID { get; set; }
 
+
         public Employee Employee { get; set; }
         public Group Group { get; set; }
     }
