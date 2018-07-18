@@ -17,15 +17,13 @@ namespace SchedulingSystem.Models
         public int SemesterID   { get; set; }
 
 
-        public Room  Room   { get; set; }  
-        public TimeBlock TimeBlock  { get; set; }
-        public DayBlock DayBlock    { get; set; }
-        public Semester Semester    { get; set; }
-        public Course Course { get; set; }
-        public Status Status { get; set; }// add
+        public Room      Room      { get; set; }  
+        public Status    Status    { get; set; }// add
+        public Course    Course    { get; set; }
+        public DayBlock  DayBlock  { get; set; }
+        public Semester  Semester  { get; set; }
+        public TimeBlock TimeBlock { get; set; }
 
         public ICollection<SectionInstructor> SectionInstructor { get; set; } 
-
-
     }
 }

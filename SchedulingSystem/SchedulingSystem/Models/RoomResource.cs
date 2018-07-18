@@ -1,4 +1,5 @@
-﻿using System.Security.AccessControl;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Security.AccessControl;
 
 namespace SchedulingSystem.Models
 {
@@ -7,7 +8,10 @@ namespace SchedulingSystem.Models
         public int RoomResourceID { get; set; }
         public int ResourceID { get; set; }
         public int RoomID { get; set; }
-        public int Quantity { get; set; }
+        /// <summary>
+        /// Using byte because do we really have more than 256?
+        /// </summary>
+        public byte Quantity { get; set; }
 
         public Room Room { get; set; }
     }

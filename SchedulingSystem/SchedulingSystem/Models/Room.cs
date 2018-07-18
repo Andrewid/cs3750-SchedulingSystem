@@ -11,10 +11,13 @@ namespace SchedulingSystem.Models
         [Key] public int RoomID { get; set; }
         [Required]
         public Location LocationID { get; set; }
+
         [Display(Name = "Number")]
         [StringLength(30)] public string RoomNumber { get; set; }
+
         [Display(Name = "Description")]
         [StringLength(50)] public string RoomDescription { get; set; }
+
         [Display(Name = "Capacity")]
         public byte RoomCapacity { get; set; }
 
