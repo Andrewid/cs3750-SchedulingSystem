@@ -22,9 +22,10 @@ namespace SchedulingSystem.Models
         [Display(Name = "Email")]
         [StringLength(35)]
         public string EmployeeEmail { get; set; }
+
         [DataType(DataType.PhoneNumber)]
         [Display(Name = "Phone Number")]
-        [StringLength(35)]
+        //[StringLength(35)]
         public string EmployeePhoneNumber { get; set; }
 
         public string EmployeeTitle { get; set; }
